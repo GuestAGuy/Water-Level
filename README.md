@@ -13,3 +13,8 @@ We encoded date/time values from 0 to 4000.
 We normalized our data to make it more readable. 
 We used 'DATE TIME' as x-axis and 'STORAGE' as our y-axis for our linear & polynomial regressions as we are trying to predict future water storage over time. 
 We decided that our polynomial regression model best represents our prediction. 
+
+
+
+# Colab Link
+https://colab.research.google.com/drive/1YLEEMDktyVtE5MWI_Y_atUegwV3mt5jd#scrollTo=h5cYFrr600Zv
