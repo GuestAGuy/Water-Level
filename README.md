@@ -9,11 +9,9 @@ We will be normalizing the data as there is not much correlation and the graphs 
 
 
 # Preprocessing Data (After)
-We encoded date/time values from 0 to 4000. 
-We normalized our data to make it more readable. 
-We used 'DATE TIME' as x-axis and 'STORAGE' as our y-axis for our linear & polynomial regressions as we are trying to predict future water storage over time. 
-We decided that our polynomial regression model best represents our prediction. 
+We encoded date/time values from 0 to 4000. We normalized our data to make it more readable. We used 'DATE TIME' as x-axis and 'STORAGE' as our y-axis for our linear & polynomial regressions as we are trying to predict future water storage over time. Linear regression was an incredibly poor fit, so we decided that our polynomial regression model with the 9th degree has the best represents our prediction. The graph is an underfit graph since it cannot accurately predict the natural occurances such as drought and heavy rain seasons. The MSE for test and training is printed out below the graphs of each one.
 
+Upcoming changes: We need to convert date time from an encoded string to a date time object with python for a more smooth graph. Scale the data by yearly.
 
 
 # Colab Link
