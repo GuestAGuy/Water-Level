@@ -4,7 +4,7 @@ By Steven Chen, Jason Wu, Young Cheol Ko, Joshua Buhain, Rohith Kolli
 # Abstract
 Our project will be taking collected water reservoir data in California to create a regression to predict future water levels. It will highlight the differing various changes of Lake Berryessa by their reservoir storage, inflow and outflow. A reliable prediction model will help aid in better planning and mitigations of risks such as droughts. The data in observation will be taken from 2001 to 2021. Those are the years which we look at.
 
-#Introduction
+# Introduction
 California is experiencing its driest three-year period on record, and the fourth year of drought is forecasted. One of the most drastic consequences of such extreme drought conditions is diminishing freshwater supplies. Reservoirs are an important source of water for both agricultural and urban usage. They furthermore provide flood control, recreation, wildlife habitat, and hydropower benefits.
 
 The height of the reservoir water level has far-reaching consequences. Too low and farmers might be forced to leave their lands uncultivated, hydropower is not generated, and citizens experience water insecurity. Too high and adequate flood protection is at stake. Therefore, predicting reservoir water level is crucial to prepare for future conditions and mitigate potential negative consequences.
