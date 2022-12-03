@@ -23,7 +23,12 @@ Lake Berryessa, 10/22/2022
 We requested our dataset from the California Department of Water Resources data center [(Link)](https://cdec.water.ca.gov/dynamicapp/staMeta?station_id=BER). The department installed various kinds of sensors in the reservoir and collected data related to the reservoir. These various types of data are used by them to manage the water resources of the reservoir. This data is publicly available to everyone to help researchers in monitoring the various lakes in California. This site makes data easy to read and understand by giving a graph display as well as tables. In our case, we requested to use data about Lake Berryessa about its daily inflow, outflow, precipitation, and water storage from 2001 to 2021. 
 
 ## Data Preprocessing 
-The data measurements gathered from CDWR data center are updated daily with a few null values. We don’t think we have imbalanced data as they are recorded daily and were all under the same time frame. Our pair plots do not indicate dramatic outliers in our dataset, . To account for the oddities in our data set, null values and “---” were removed from the dataset. Date and time were converted from their string value to a Date object to be used in matplotlib. For example, the original string of “20010101 0000” was converted into a more usable “010101” to represent January 1st, 2001. We then subtract each date object with the date of the first row to turn them into days elapsed. Data values for inflow and outflow categories were normalized to make the display of the incredibly large values less varying. To get an estimation of the distribution of data, we created a polynomial regression prediction of water storage level changes by time.
+The data measurements gathered from CDWR data center are updated daily with a few null values. We don’t think we have imbalanced data as they are recorded daily and were all under the same time frame. Our pair plots do not indicate dramatic outliers in our dataset, . To account for the oddities in our data set, null values and “---” were removed from the dataset. Date and time were converted from their string value to a Date object to be used in matplotlib. For example, the original string of “20010101 0000” was converted into a more usable “010101” to represent January 1st, 2001. We then subtract each date object with the date of the first row to turn them into days elapsed. Data values for inflow and outflow categories were normalized to make the display of the incredibly large values less varying. To get an estimation of the distribution of data, we created a polynomial regression prediction of water storage level changes by time. 
+
+
+## Model Design
+
+## Conclusions
 
 
 
