@@ -1,10 +1,10 @@
-# Water-Level Project 
+# Predicting Lake Berryessa Water Level Using Machine Learning 
 By Steven Chen, Jason Wu, Young Cheol Ko, Joshua Buhain, Rohith Kolli
 
-# Abstract
+## Abstract
 Our project will be taking collected water reservoir data in California to create a regression to predict future water levels. It will highlight the differing various changes of Lake Berryessa by their reservoir storage, inflow and outflow. A reliable prediction model will help aid in better planning and mitigations of risks such as droughts. The data in observation will be taken from 2001 to 2021. Those are the years which we look at.
 
-# Introduction
+## Introduction
 California is experiencing its driest three-year period on record, and the fourth year of drought is forecasted. One of the most drastic consequences of such extreme drought conditions is diminishing freshwater supplies. Reservoirs are an important source of water for both agricultural and urban usage. They furthermore provide flood control, recreation, wildlife habitat, and hydropower benefits.
 
 The height of the reservoir water level has far-reaching consequences. Too low and farmers might be forced to leave their lands uncultivated, hydropower is not generated, and citizens experience water insecurity. Too high and adequate flood protection is at stake. Therefore, predicting reservoir water level is crucial to prepare for future conditions and mitigate potential negative consequences.
@@ -13,14 +13,18 @@ California has about 1,300 reservoirs that can hold more than 43 million acre-fe
 
 The purpose of the current project is to build a model that predicts Lake Berryessa reservoir water level. Data regarding Lake Berryessa reservoir is publicly available on the California Department of Water Resources website and can be scraped manually using their web API.
 
-# Preprocessing Data (Plan)
-We will be normalizing the data as there is not much correlation and the graphs are skewed and not normal between Inflow, Outflow and Storage. We will modify our time frame to be more appropiate such as tracking monthly and/or yearly instead of daily to limit variance and for a more accurate representation of the seasons. 
+Lake Berryessa, 3/14/2015
+![lake-berryessa-mark-ruanto](https://user-images.githubusercontent.com/68248379/205460300-15a55755-6e26-4f8e-a519-8cc007c06576.jpg)
 
+Lake Berryessa, 10/22/2022
+![IMG_7716](https://user-images.githubusercontent.com/68248379/205460106-9a615ddd-ec54-4405-9a0b-473f6c67f3f7.jpg)
 
-# Preprocessing Data (After)
-We encoded date/time values from 0 to 4000. We normalized our data to make it more readable. We used 'DATE TIME' as x-axis and 'STORAGE' as our y-axis for our linear & polynomial regressions as we are trying to predict future water storage over time. Linear regression was an incredibly poor fit, so we decided that our polynomial regression model with the 9th degree has the best represents our prediction. The graph is an underfit graph since it cannot accurately predict the natural occurances such as drought and heavy rain seasons. The MSE for test and training is printed out below the graphs of each one.
+## Data Exploration
+We requested our dataset from the California Department of Water Resources data center [(Link)](https://cdec.water.ca.gov/dynamicapp/staMeta?station_id=BER). The department installed various kinds of sensors in the reservoir and collected data related to the reservoir. These various types of data are used by them to manage the water resources of the reservoir. This data is publicly available to everyone to help researchers in monitoring the various lakes in California. This site makes data easy to read and understand by giving a graph display as well as tables. In our case, we requested to use data about Lake Berryessa about its daily inflow, outflow, precipitation, and water storage from 2001 to 2021. 
 
-Upcoming changes: We need to convert date time from an encoded string to a date time object with python for a more smooth graph. Scale the data by yearly to see how it changes by year.
+## Data Preprocessing 
+The data measurements gathered from CDWR data center are updated daily with a few null values. We don’t think we have imbalanced data as they are recorded daily and were all under the same time frame. Our pair plots do not indicate dramatic outliers in our dataset, . To account for the oddities in our data set, null values and “---” were removed from the dataset. Date and time were converted from their string value to a Date object to be used in matplotlib. For example, the original string of “20010101 0000” was converted into a more usable “010101” to represent January 1st, 2001. We then subtract each date object with the date of the first row to turn them into days elapsed. Data values for inflow and outflow categories were normalized to make the display of the incredibly large values less varying. To get an estimation of the distribution of data, we created a polynomial regression prediction of water storage level changes by time.
+
 
 
 # Colab Link
