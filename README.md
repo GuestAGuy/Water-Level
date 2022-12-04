@@ -30,11 +30,37 @@ The data measurements gathered from CDWR data center are updated daily with a fe
 ![a2](https://user-images.githubusercontent.com/68248379/205481578-467bf512-3f9b-4b08-8c43-b42b23238a3c.JPG)
 
 ## Model Design
+### Model 1: Polynomial Regression 
+Before creating the model, we created a polynomial regression of degree 4 for both a 20-year dataset and a single year dataset to help visualize the dataset. It seemed to be a decent fit compared to a linear or logistic regression, with a training MSE of approximately .00304 and a testing MSE of approximately .00227.
+
+Our polynomial regression model had a training mean-squared error (MSE) of about .0334 and a testing MSE of .0345, which are good values. Our training and testing R squared error was -.335 and -.375. 
+
+![a1](https://user-images.githubusercontent.com/68248379/205481573-01880839-6ee3-486a-827d-f6542edb714b.JPG)
+![a2](https://user-images.githubusercontent.com/68248379/205481578-467bf512-3f9b-4b08-8c43-b42b23238a3c.JPG)
 
 ### Model 2: Neural network 
-Our goal with the neural network is get the train data of one year and try to predict the next year of storage level. First, we divided our data from 0 to 365 to get first year of the data. Our test data is the whole next year's storage value. We created a neural network model with the keras neural network. And we added multiple layers with different functions (relu, tanh, sigmoid). We tried 3 different function combination models. But, It showed that any combination of different function models gives the same percentage error around 0.5.
+Our goal with the neural network is to get the train data(the inflow, outflow, precipitation, date of the year, and storage change) of one year and try to predict the next year of storage level. First, we divided our data from 0 to 365 to get the first year of the data. Our test data is the whole next year's storage value. We created a neural network model with the keras neural network. And we added multiple layers with 4 different activation functions (relu, tanh,and sigmoid). We tried three different function combination models: the only using relu with sigmoid, one tanh and two relu with sigmoid, and lastly, two tanh and one relu with sigmoid.  But, It showed that any combination of different function models gives the same percentage error around 50%. It will consider the prediction to be correct if it is within 5% of error from the actual value.
+
+## Discussion
+In this assignment, we ran into many problems that may have led to skewed results. For one case, Lake Berryessa is a unique lake with a very distinct feature called the “hole”. This hole is a giant water spillway that will drain the excess water when the reservoir’s storage hits the capacity.  This spillway is why we see a massive increase in the ‘outflow’ when the water level is high, and why ‘outflow’ has some correlation with the storage, but has little correlation with ‘storage change.’  This is the main reason why we have trouble predicting the ‘storage change,’ and how the ‘storage change’ has almost no correlation with the ‘storage.’
+
+Similarly, we did not have enough sensor data to work with to help make an accurately predictive model for neural networks. The majority of the water would come from rainfall, and exit through vaporization or infiltration, those are not included in the ‘Inflow’ and ‘outflow.’ Which is the reason why they both have little correlation with ‘storage’ 
+
+Another conditional issue related is that water level is incredibly dependent on the seasonal changes. Using random train and test values, while key in neural networks would not be possible with the varying water levels based on the season of the year. A solution to this issue would possibly be to have a constant model that can modify itself based on its current season. 
+
+While it may be possible to resolve these problems if we used a different set of neural nodes to calculate our values, or do more processing with our data. 
+
 
 ## Conclusions
+Lake Berryessa is a breathtaking natural landscape filled with plenty of unique wildlife and scenery. In order to best understand its majestic beauty, our group took a field trip to observe the shining blue lake itself. 
+
+With our current training model, we have a relatively effective predictive model that can estimate Lake Berryessa’s storage capacity over a yearly basis. If given a possible second chance on the project, we would probably pick another fantastic lake like Lake Tahoe to describe changing water levels. It also might be possible that an SVM would be a more effective approach to calculating an estimate of changes since water storage is never a set amount and is ever changing depending on the year. 
+
+In conclusion, our project attempts to predict Lake Berryessa’s changing water levels by Neural Network and Polynomial regression. While our model is not as accurate as we hoped it be, we hope it is an introductory step creating a machine learning prediction model. 
+
+Below attached is an image of our group visit to Lake Berryessa, a local landmark less than 15 miles away from UC Davis!
+
+![IMG_5028](https://user-images.githubusercontent.com/68248379/205481726-651222c3-d07b-468b-ac5c-d83aeee8ac5e.jpg)
 
 
 
