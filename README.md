@@ -22,7 +22,7 @@ Lake Berryessa, 10/22/2022
 ## Data Exploration
 We requested our dataset from the California Department of Water Resources data center [(Link)](https://cdec.water.ca.gov/dynamicapp/staMeta?station_id=BER). The department installed various kinds of sensors in the reservoir and collected data related to the reservoir. These various types of data are used by them to manage the water resources of the reservoir. This data is publicly available to everyone to help researchers in monitoring the various lakes in California. This site makes data easy to read and understand by giving a graph display as well as tables. In our case, we requested to use data about Lake Berryessa about its daily inflow, outflow, precipitation, and water storage from 2001 to 2021. 
 
-![heatmap](https://user-images.githubusercontent.com/68248379/205461165-33ede1b7-c13a-4dbd-98c0-8f5576523f84.JPG) Format: ![Alt Text]
+![heatmap](https://user-images.githubusercontent.com/68248379/205461165-33ede1b7-c13a-4dbd-98c0-8f5576523f84.JPG)
 
 
 
