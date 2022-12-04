@@ -1,5 +1,5 @@
 # Predicting Lake Berryessa Water Level Using Machine Learning 
-By Steven Chen, Jason Wu, Young Cheol Ko, Joshua Buhain, Rohith Kolli
+By Steven Chen, Jason Wu, Young Cheol Ko, Joshua Buhain
 
 ## Introduction
 California is experiencing its driest three-year period on record, and the fourth year of drought is forecasted. One of the most drastic consequences of such extreme drought conditions is diminishing freshwater supplies. Reservoirs are an important source of water for both agricultural and urban usage. They furthermore provide flood control, recreation, wildlife habitat, and hydropower benefits.
