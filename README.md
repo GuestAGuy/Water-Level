@@ -42,9 +42,11 @@ We requested our dataset from the California Department of Water Resources data 
 - Data values for inflow and outflow categories were normalized to make the display of the incredibly large values less varying. 
 
 Processed Date Time
+
 <img width="510" alt="Screen Shot 2022-12-04 at 12 57 14 AM" src="https://user-images.githubusercontent.com/31902338/205482298-fe4cc55a-4c12-4149-9872-7845bbdd1676.png">
 
 Normalized data for relevant columns
+
 <img width="459" alt="Screen Shot 2022-12-04 at 12 59 28 AM" src="https://user-images.githubusercontent.com/31902338/205482352-14241fed-dc8d-4ed1-af5e-723b3f54ffed.png">
 
 
