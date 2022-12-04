@@ -24,10 +24,29 @@ We requested our dataset from the California Department of Water Resources data 
 
 
 ## Data Preprocessing 
-The data measurements gathered from CDWR data center are updated daily with a few null values. We don’t think we have imbalanced data as they are recorded daily and were all under the same time frame. Our pair plots do not indicate dramatic outliers in our dataset, . To account for the oddities in our data set, null values and “---” were removed from the dataset. Date and time were converted from their string value to a Date object to be used in matplotlib. For example, the original string of “20010101 0000” was converted into a more usable “010101” to represent January 1st, 2001. We then subtract each date object with the date of the first row to turn them into days elapsed. Data values for inflow and outflow categories were normalized to make the display of the incredibly large values less varying. To get an estimation of the distribution of data, we created a polynomial regression prediction of water storage level changes by time. 
-![a1](https://user-images.githubusercontent.com/68248379/205481573-01880839-6ee3-486a-827d-f6542edb714b.JPG)
 
-![a2](https://user-images.githubusercontent.com/68248379/205481578-467bf512-3f9b-4b08-8c43-b42b23238a3c.JPG)
+<img width="1176" alt="Screen Shot 2022-12-04 at 12 50 26 AM" src="https://user-images.githubusercontent.com/31902338/205481990-893f357d-c7ce-4631-b454-966376a740cf.png">
+
+- We dropped the following columns from our CSV:
+    - Station_ID: All measurements originate from the same station ID 
+    - DATA_FLAG: There is actually no data under this column
+    - DURATION: All our dataset is recorded daily (D). Redundant.
+    - UNITS: Redundant.
+    - OBS DATE: This column is redundant, exactly the same as Date Time.
+- We don’t think we have an imbalanced dataset as each data column was consistently recorded daily and were all under the same time frame.
+- However, some of the data measurements gathered from CDWR data center are updated daily with a few null values. 
+- To account for the oddities in our data set, null values and “---” were removed from the dataset.
+- We processed Date and time in two ways
+    - Converted from their string value to a Date object to be used in matplotlib. For example, the original string of “20010101 0000” was converted into a Date object. We omitted the last 4 digits as it is reserved for hours and minutes.
+    - Further added two new columns, one that shows days elapsed since the start of our data set. Populated by subtracting current date with initial date. And another that shows which day of the year it is.
+- Data values for inflow and outflow categories were normalized to make the display of the incredibly large values less varying. 
+
+Processed Date Time
+<img width="510" alt="Screen Shot 2022-12-04 at 12 57 14 AM" src="https://user-images.githubusercontent.com/31902338/205482298-fe4cc55a-4c12-4149-9872-7845bbdd1676.png">
+
+Normalized data for relevant columns
+<img width="459" alt="Screen Shot 2022-12-04 at 12 59 28 AM" src="https://user-images.githubusercontent.com/31902338/205482352-14241fed-dc8d-4ed1-af5e-723b3f54ffed.png">
+
 
 ## Model Design
 ### Model 1: Polynomial Regression 
