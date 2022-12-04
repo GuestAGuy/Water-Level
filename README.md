@@ -59,7 +59,7 @@ Our polynomial regression model had a training mean-squared error (MSE) of about
 ![a1](https://user-images.githubusercontent.com/68248379/205481573-01880839-6ee3-486a-827d-f6542edb714b.JPG)
 ![a2](https://user-images.githubusercontent.com/68248379/205481578-467bf512-3f9b-4b08-8c43-b42b23238a3c.JPG)
 
-### Model 2: Neural network 
+### Model 2: Neural Network 
 
 Our goal with the neural network is to get the train data(the inflow, outflow, precipitation, date of the year, and storage change) of one year and try to predict the next year of storage level. First, we divided our data from 0 to 365 to get the first year of the data. Our test data is the whole next year's storage value. We created a neural network model with the keras neural network. And we added multiple layers with 4 different activation functions (relu, tanh,and sigmoid). We tried three different function combination models: the only using relu with sigmoid, one tanh and two relu with sigmoid, and lastly, two tanh and one relu with sigmoid.  But, It showed that any combination of different function models gives the same percentage error around 50%. It will consider the prediction to be correct if it is within 5% of error from the actual value.
 
@@ -86,7 +86,12 @@ Below attached is an image of our group visit to Lake Berryessa, a local landmar
 
 ![IMG_5028](https://user-images.githubusercontent.com/68248379/205481726-651222c3-d07b-468b-ac5c-d83aeee8ac5e.jpg)
 
+## Collaboration
 
+Steven Chen - 
+Jason Wu - 
+Young Cheol Ko - Data Preprocessing, Neural Network
+Joshua Buhain - 
 
 # Colab Link
 https://colab.research.google.com/drive/1YLEEMDktyVtE5MWI_Y_atUegwV3mt5jd#scrollTo=h5cYFrr600Zv
