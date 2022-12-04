@@ -94,7 +94,7 @@ Jason Wu -
 
 Young Cheol Ko - Data Preprocessing, Neural Network
 
-Joshua Buhain - 
+Joshua Buhain - Data Collection&Preprocessing, Introduction
 
 # Colab Link
 https://colab.research.google.com/drive/1YLEEMDktyVtE5MWI_Y_atUegwV3mt5jd#scrollTo=h5cYFrr600Zv
