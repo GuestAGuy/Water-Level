@@ -75,7 +75,7 @@ Another conditional issue related is that water level is incredibly dependent on
 While it may be possible to resolve these problems if we used a different set of neural nodes to calculate our values, or do more processing with our data. 
 
 
-## Conclusions
+## Conclusion
 Lake Berryessa is a breathtaking natural landscape filled with plenty of unique wildlife and scenery. In order to best understand its majestic beauty, our group took a field trip to observe the shining blue lake itself. 
 
 With our current training model, we have a relatively effective predictive model that can estimate Lake Berryessa’s storage capacity over a yearly basis. If given a possible second chance on the project, we would probably pick another fantastic lake like Lake Tahoe to describe changing water levels. It also might be possible that an SVM would be a more effective approach to calculating an estimate of changes since water storage is never a set amount and is ever changing depending on the year. 
