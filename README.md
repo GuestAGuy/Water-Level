@@ -28,7 +28,9 @@ We requested our dataset from the California Department of Water Resources data 
 
 ## Data Preprocessing 
 The data measurements gathered from CDWR data center are updated daily with a few null values. We don’t think we have imbalanced data as they are recorded daily and were all under the same time frame. Our pair plots do not indicate dramatic outliers in our dataset, . To account for the oddities in our data set, null values and “---” were removed from the dataset. Date and time were converted from their string value to a Date object to be used in matplotlib. For example, the original string of “20010101 0000” was converted into a more usable “010101” to represent January 1st, 2001. We then subtract each date object with the date of the first row to turn them into days elapsed. Data values for inflow and outflow categories were normalized to make the display of the incredibly large values less varying. To get an estimation of the distribution of data, we created a polynomial regression prediction of water storage level changes by time. 
+![a1](https://user-images.githubusercontent.com/68248379/205481573-01880839-6ee3-486a-827d-f6542edb714b.JPG)
 
+![a2](https://user-images.githubusercontent.com/68248379/205481578-467bf512-3f9b-4b08-8c43-b42b23238a3c.JPG)
 
 ## Model Design
 
