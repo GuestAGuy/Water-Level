@@ -32,7 +32,7 @@ The data measurements gathered from CDWR data center are updated daily with a fe
 
 ## Model Design
 
-###Model 2: Neural network 
+### Model 2: Neural network 
 Our goal with the neural network is get the train data of one year and trying to predict the next year of storage level. First, we divided our data from 0 to 365 to get first year of the data. Our test data is the whole next year storage value. We created a neural network model with the keras neural network. And we added multiple layers with different functions (relu, tanh, sigmoid).
 It showed any combination of different function model gives same huge errors.
 
