@@ -88,7 +88,7 @@ Below attached is an image of our group visit to Lake Berryessa, a local landmar
 
 ## Collaboration
 
-Steven Chen - 
+Steven Chen - Abstrat, Neural Network, Debugging
 
 Jason Wu - 
 
