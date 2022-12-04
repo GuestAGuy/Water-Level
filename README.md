@@ -13,10 +13,10 @@ California has about 1,300 reservoirs that can hold more than 43 million acre-fe
 
 The purpose of the current project is to build a model that predicts Lake Berryessa reservoir water level. Data regarding Lake Berryessa reservoir is publicly available on the California Department of Water Resources website and can be scraped manually using their web API.
 
-Lake Berryessa, 3/14/2015
+Lake Berryessa, 3/2015
 ![lake-berryessa-mark-ruanto](https://user-images.githubusercontent.com/68248379/205460300-15a55755-6e26-4f8e-a519-8cc007c06576.jpg)
 
-Lake Berryessa, 10/22/2022
+Lake Berryessa, 11/2022
 ![IMG_7716](https://user-images.githubusercontent.com/68248379/205460106-9a615ddd-ec54-4405-9a0b-473f6c67f3f7.jpg)
 
 ## Data Exploration
