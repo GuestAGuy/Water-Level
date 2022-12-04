@@ -90,3 +90,7 @@ Below attached is an image of our group visit to Lake Berryessa, a local landmar
 
 # Colab Link
 https://colab.research.google.com/drive/1YLEEMDktyVtE5MWI_Y_atUegwV3mt5jd#scrollTo=h5cYFrr600Zv
+
+# readme(Google Docs)
+
+https://docs.google.com/document/d/1f5Ly9RGLh3XuJV4NY42HNqutqRGA8b2YBm_vC2826NM/edit#
