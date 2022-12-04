@@ -39,6 +39,8 @@ Our polynomial regression model had a training mean-squared error (MSE) of about
 ![a2](https://user-images.githubusercontent.com/68248379/205481578-467bf512-3f9b-4b08-8c43-b42b23238a3c.JPG)
 
 ### Model 2: Neural network 
+
+![model1](https://user-images.githubusercontent.com/68248379/205481763-6f77d1e8-1364-4934-965a-660c34816444.PNG)
 Our goal with the neural network is to get the train data(the inflow, outflow, precipitation, date of the year, and storage change) of one year and try to predict the next year of storage level. First, we divided our data from 0 to 365 to get the first year of the data. Our test data is the whole next year's storage value. We created a neural network model with the keras neural network. And we added multiple layers with 4 different activation functions (relu, tanh,and sigmoid). We tried three different function combination models: the only using relu with sigmoid, one tanh and two relu with sigmoid, and lastly, two tanh and one relu with sigmoid.  But, It showed that any combination of different function models gives the same percentage error around 50%. It will consider the prediction to be correct if it is within 5% of error from the actual value.
 
 ## Discussion
