@@ -89,8 +89,11 @@ Below attached is an image of our group visit to Lake Berryessa, a local landmar
 ## Collaboration
 
 Steven Chen - 
+
 Jason Wu - 
+
 Young Cheol Ko - Data Preprocessing, Neural Network
+
 Joshua Buhain - 
 
 # Colab Link
