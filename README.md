@@ -90,7 +90,7 @@ Below attached is an image of our group visit to Lake Berryessa, a local landmar
 
 Steven Chen - Abstrat, Neural Network, Debugging
 
-Jason Wu - 
+Jason Wu - Data Preprocessing, Polynomial regression, Debugging
 
 Young Cheol Ko - Data Preprocessing, Neural Network
 
