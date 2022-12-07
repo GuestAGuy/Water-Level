@@ -88,7 +88,7 @@ Below attached is an image of our group visit to Lake Berryessa, a local landmar
 
 ## Collaboration
 
-Steven Chen - Abstrat, Neural Network, Debugging
+Steven Chen - Abstract, Neural Network, Debugging
 
 Jason Wu - Data Preprocessing, Polynomial regression, Debugging
 
